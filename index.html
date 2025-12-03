@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Giwu Construction (Ltd) Pty</title>
+  <meta name="description" content="Giwu Construction — Building, Civil, Fencing, Renovations, Supply of goods & professional quantity surveying services." />
+  <style>
+    :root{
+      --bg:#f5f1ef; /* soft brownish-neutral */
+      --muted:#6b7280;
+      --giwu-green:#1a4636; /* deep blue-green */ /* softened dark green */ /* from PDF dark green */
+      --accent:#c59d3f; /* gold */ /* warm construction orange */ /* soft gold */
+      --dark:#2b2b2b; /* dark grey */
+      --card:#ffffff;
+      --maxw:1100px;
+      --radius:12px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#111}
+    header{background:linear-gradient(90deg,var(--dark),#0f2b22);color:white;padding:18px}
+    .container{max-width:var(--maxw);margin:0 auto;padding:24px}
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo{width:64px;height:64px;border-radius:8px;background:var(--giwu-green);display:flex;align-items:center;justify-content:center;color:var(--accent);font-weight:900;font-size:20px}
+    nav{margin-left:auto}
+    a.navlink{color:#fff;text-decoration:none;margin-left:14px;font-weight:700}
+
+    .hero{display:grid;grid-template-columns:1fr;gap:18px;align-items:center;padding:48px 16px}
+    .eyebrow{color:var(--accent);font-weight:800}
+    h1{font-size:34px;margin:0}
+    p.lead{color:var(--muted);max-width:720px}
+    .button{background:var(--giwu-green);color:var(--accent);padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700}
+
+    section{padding:36px 16px}
+    .card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 20px rgba(18,18,18,0.06)}
+
+    .grid{display:grid;gap:18px}
+    .cols-3{grid-template-columns:repeat(3,1fr)}
+    .cols-2{grid-template-columns:repeat(2,1fr)}
+
+    .service{display:flex;gap:12px;align-items:flex-start}
+    .service .icon{width:56px;height:56;border-radius:8px;background:#eef6ef;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--giwu-green)}
+    .muted{color:var(--muted)}
+
+    .projects img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+
+    footer{background:var(--dark);color:#d1e7da;padding:24px;text-align:center}
+
+    /* contact */
+    .contact-list{list-style:none;padding:0;margin:0}
+    .contact-list li{margin-bottom:8px}
+
+    @media(min-width:900px){
+      .hero{grid-template-columns:1fr 420px}
+      h1{font-size:44px}
+      .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+      .grid.cols-2{grid-template-columns:repeat(2,1fr)}
+    }
+
+    a.whatsapp{background:#25D366;color:white;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:700}
+  </style>
+</head>
+<body>
+  <header>
+      <div class="container" style="display:flex;align-items:center;gap:12px">
+        <img src="data:image/png;base64,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...>
+        <a class="navlink" href="#home">Home</a>
+        <a class="navlink" href="#about">About</a>
+        <a class="navlink" href="#vision">Vision</a>
+        <a class="navlink" href="#services">Services</a>
+        <a class="navlink" href="#structure">Org</a>
+        <a class="navlink" href="#projects">Projects</a>
+        <a class="navlink" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <div class="container hero card" style="margin-top:16px">
+      <div>
+        <div class="eyebrow">You Dream It. We Build It.</div>
+        <h1>Giwu Construction — Trusted. Compliant. Precise.</h1>
+        <p class="lead">Giwu Construction (Pty) Ltd is a 100% black woman-owned construction company (BBBEE Level 1) delivering building, civil, fencing, renovation and professional quantity surveying services across the Western Cape. We prioritise safety, value and transparent communication.</p>
+        <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
+          <a class="button" href="#contact">Request a Quote</a>
+          <a class="whatsapp" href="https://wa.me/27621949803" target="_blank">WhatsApp Us</a>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <div class="card"><strong>BBBEE Level 1</strong><div class="muted">100% black woman-owned company.</div></div>
+        <div class="card"><strong>Compliance & Safety</strong><div class="muted">Construction health & safety professionals and licensed staff.</div></div>
+      </div>
+    </div>
+
+    <section id="about" class="container">
+      <div class="card">
+        <h2>About Giwu Construction</h2>
+        <p class="muted">Founded in 2021 by Nolukhanyo Ngceni, Giwu Construction brings together expertise in project management, quantity surveying, construction health & safety, and on-site supervision. Our mission is to manage projects efficiently, deliver excellent value, and maintain the highest professional standards.</p>
+      </div>
+    </section>
+
+    <section id="vision" class="container">
+      <div class="card">
+        <h2>Vision, Mission & Values</h2>
+        <h3>Vision</h3>
+        <p class="muted">Developing, building, and servicing South Africa's requirements for better living and working conditions.</p>
+        <h3>Mission</h3>
+        <p class="muted">To manage projects efficiently and effectively while prioritising safety and client satisfaction.</p>
+        <h3>Values</h3>
+        <p class="muted">Integrity • Passion • Commitment • Transparency</p>
+      </div>
+    </section>
+
+    <section id="services" class="container">
+      <h2>Our Services</h2>
+      <div class="grid cols-3" style="margin-top:12px">
+        <div class="card service">
+          <div class="icon">BC</div>
+          <div>
+            <h3>Building Construction</h3>
+            <p class="muted">Complete residential and commercial building projects from foundation to finish.</p>
+          </div>
+        </div>
+
+        <div class="card service">
+          <div class="icon">CC</div>
+          <div>
+            <h3>Civil Construction</h3>
+            <p class="muted">Earthworks, site preparation, drainage and other civil works.</p>
+          </div>
+        </div>
+
+        <div class="card service">
+          <div class="icon">F</div>
+          <div>
+            <h3>Fencing Construction</h3>
+            <p class="muted">Palisade, chainlink, timber and custom fencing installations.</p>
+          </div>
+        </div>
+
+        <div class="card service">
+          <div class="icon">PW</div>
+          <div>
+            <h3>Partition Walls</h3>
+            <p class="muted">Office and interior partition installation.</p>
+          </div>
+        </div>
+
+        <div class="card service">
+          <div class="icon">R</div>
+          <div>
+            <h3>Renovations & Repairs</h3>
+            <p class="muted">Refurbishment, repairs and internal/external finishes.</p>
+          </div>
+        </div>
+
+        <div class="card service">
+          <div class="icon">F&amp;E</div>
+          <div>
+            <h3>Finishes & Design</h3>
+            <p class="muted">Design and finishing services to make spaces functional and attractive.</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 style="margin-top:22px">Supply of Goods & Services</h3>
+      <div class="grid cols-2" style="margin-top:12px">
+        <div class="card">
+          <h4>Supply of Furniture</h4>
+          <p class="muted">Office and reception furniture delivered and installed.</p>
+        </div>
+        <div class="card">
+          <h4>Health & Safety Equipment</h4>
+          <p class="muted">PPE and site safety equipment sourced for projects.</p>
+        </div>
+      </div>
+
+      <h3 style="margin-top:22px">Professional Services</h3>
+      <div class="grid cols-2" style="margin-top:12px">
+        <div class="card">
+          <h4>BOQ & Quantity Measurement</h4>
+          <p class="muted">Accurate bill of quantities and material takeoffs for precise budgeting.</p>
+        </div>
+        <div class="card">
+          <h4>Quantity Surveying</h4>
+          <p class="muted">Cost planning, value engineering and quantity surveying related services.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="structure" class="container">
+      <h2>Organisational Structure</h2>
+      <div class="card">
+        <div class="grid cols-3" style="text-align:center; margin-top:12px">
+          <div>
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=300&q=60" style="width:100%;height:160px;object-fit:cover;border-radius:8px" />
+            <h4>Project Manager</h4>
+            <p class="muted">Oversees planning & execution</p>
+          </div>
+          <div>
+            <img src="https://images.unsplash.com/photo-1581090121273-4c1e1a2c8f20?auto=format&fit=crop&w=300&q=60" style="width:100%;height:160px;object-fit:cover;border-radius:8px" />
+            <h4>Quantity Surveyor</h4>
+            <p class="muted">Cost control & BOQ</p>
+          </div>
+          <div>
+            <img src="https://images.unsplash.com/photo-1597589831374-ea3dc0d38bae?auto=format&fit=crop&w=300&q=60" style="width:100%;height:160px;object-fit:cover;border-radius:8px" />
+            <h4>Site Foreman</h4>
+            <p class="muted">Supervises on-site operations</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="container">
+      <h2>Recent Projects</h2>
+      <div class="grid projects cols-3" style="margin-top:12px">
+        <div class="card"><img src="https://images.unsplash.com/photo-1600585153490-76fb20a32601?auto=format&fit=crop&w=1200&q=60" alt="Residential Extension"/><h4>Residential Extension</h4><p class="muted">Structural extension under construction.</p></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=60" alt="Site Preparation"/><h4>Site Preparation</h4><p class="muted">Groundwork and excavation in progress.</p></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1541888634-ff6c6a65f62e?auto=format&fit=crop&w=1200&q=60" alt="Civil Works"/><h4>Civil Works</h4><p class="muted">Pavement and drainage under construction.</p></div>
+      </div>
+    </section>
+
+    <section id="ceo" class="container">
+      <h2>Founder & CEO</h2>
+      <div class="card" style="display:grid;grid-template-columns:140px 1fr;gap:18px;align-items:center">
+        <img src="data:image/jpeg;base64,MMxMQlEiBCsdWUgISnh3kiWbIRLwkLb/39PCFLZn+gEaSwQYWjzimlgJB2dRVgOE..." alt="CEO Nolukhanyo" style="width:140px;height:140px;object-fit:cover;border-radius:8px;"/>
+        <div>
+          <h3>Nolukhanyo — Founder & CEO</h3>
+          <p class="muted">Nolukhanyo is the founder and CEO of Giwu Construction. She holds an Advanced Diploma in Quantity Surveying (NQF L7), Advanced Diploma in Construction Health & Safety (NQF L7), Diploma in Building (NQF L6), NCV L4 Civil Engineering & Building Construction, and an NQF 8 Postgraduate Diploma in Construction. She also has strong academic and practical experience in project management, bringing leadership and technical excellence to every project.</p>
+          <p class="muted">Her multidisciplinary background in construction, safety, quantity surveying, and project management positions her as a reliable leader capable of delivering high-standard results with transparency, precision, and commitment.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-contact" class="container">
+      <div class="card">
+        <h2>Contact Us</h2>
+        <p class="muted">For quotes, enquiries or to discuss a project, contact us:</p>
+        <ul class="contact-list">
+          <li><strong>Phone:</strong> +27 71 340 4384</li>
+          <li><strong>WhatsApp:</strong> <a href="https://wa.me/27621949803">+27 62 194 9803</a></li>
+          <li><strong>Email:</strong> <a href="mailto:giwuc.office@gmail.com">giwuc.office@gmail.com</a></li>
+          <li><strong>Address:</strong> 119 Voortrekker Rd, Parow, Cape Town, 7500</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>© 2025 Giwu Construction (Ltd) Pty</div>
+        <div style="font-size:13px;color:#cbd5e1">Committed to safety, quality & delivery • <a href="#contact" style="color:inherit;text-decoration:underline">Get a quote</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('a.navlink').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'})}));
+    // Quote form demo: open mailto
+    document.getElementById('quoteForm')?.addEventListener('submit', function(e){
+      e.preventDefault();
+      const form = new FormData(this);
+      const obj = {};
+      form.forEach((v,k)=>obj[k]=v);
+      const subject = encodeURIComponent('Quote request from ' + (obj.name||'') );
+      const body = encodeURIComponent(JSON.stringify(obj,null,2));
+      window.location.href = 'mailto:giwuc.office@gmail.com?subject='+subject+'&body='+body;
+    });
+  </script>
+</body>
+</html>
